@@ -1,0 +1,38 @@
+.product-statistics {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-top: 120px;
+}
+
+.statistics-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  color: #454545;
+}
+
+.statistics-header {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.statistics-row {
+  font-weight: 500;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.statistics-row p {
+  margin: 0;
+}
+
+@media(max-width: 740px) {
+  .statistics-table {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,85 @@
+.list-product {
+    margin-top: 130px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 740px;
+    padding: 10px 50px;
+    margin: 30px 24px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng cho bảng */
+}
+
+.listproduct-allproducts hr {
+    width: 100%; /* Để full width của bảng */
+    height: 1px;
+    border-radius: 10px;
+    background: #252525;
+    margin: 10px auto 20px; /* Điều chỉnh khoảng cách */
+}
+
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 1fr 0.5fr; /* Căn chỉnh lại kích thước cột */
+    gap: 15px; /* Tăng khoảng cách giữa các cột */
+    width: 100%;
+    padding: 20px 0;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.listproduct-format {
+    align-items: center;
+    font-weight: 500;
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.listproduct-product-icon {
+    height: 80px;
+    width: auto; /* Đảm bảo giữ tỷ lệ ảnh */
+    margin: auto; /* Căn giữa ảnh */
+}
+
+.listproduct-remove-icon {
+    cursor: pointer;
+    margin: auto;
+}
+
+.listproduct-allproducts {
+    overflow-y: auto;
+    width: 100%;
+}
+
+@media(max-width: 740px) {
+    .list-product {
+        margin-top: 30px !important;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
+        margin: 20px 0px;
+    }
+
+    .list-product h1 {
+        font-size: 20px;
+    }
+
+    .listproduct-format-main {
+        grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr 0.5fr; /* Điều chỉnh lại lưới cho mobile */
+        padding: 15px 0;
+        color: #454545;
+        font-size: 12px; /* Điều chỉnh kích thước font */
+    }
+
+    .listproduct-product-icon {
+        height: 60px; /* Giảm kích thước ảnh cho mobile */
+    }
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+}
